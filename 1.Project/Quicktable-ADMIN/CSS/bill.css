@@ -1,0 +1,261 @@
+.bill-card {
+    width: 100%;
+    max-width: 1100px;
+    background: #fff;
+    padding: 20px;
+    margin: 20px 0 0 90px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.bill-card p {
+    margin: 0 15px;
+    color: #11101D;
+    font-size: 16px;
+}
+.see-bill {
+    background: white;
+    border: none;
+    color: blue;
+    font-size: 16px;
+    cursor: pointer;
+}
+.see-bill:hover {
+    color: #0056b3;
+}
+
+.action-btn {
+    padding: 10px 25px;
+    font-size: 16px;
+    margin: 5px 0 0 940px;
+    border: none;
+    cursor: pointer;
+    background: #007bff;
+    color: white;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.action-btn:hover {
+    background: #0056b3;
+}
+.bill-checkbox {
+    display: none;
+    position: absolute;
+    left: -40px;
+    transform: scale(1.5);
+}
+
+
+
+/* all bill pop-up css */
+/* Restaurant Name Styling */
+.restaurant-name {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #11101D;
+    margin-bottom: 10px; /* Adds space below the name */
+}
+
+/* Bill Container */
+.bill-container {
+    width: 70%;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 40px;  /* Rounded corners */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Bill Header */
+.bill-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Horizontal Line */
+hr {
+    border: 1px solid #000;
+    margin: 10px 0;
+}
+
+/* Bill Table */
+.bill-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+/* Keep header border */
+.bill-table th {
+    background: #11101D;
+    color: white;
+    padding: 10px;
+    border: 1px solid #ffff;
+}
+
+/* Adjust column widths */
+.bill-table th:nth-child(1), .bill-table td:nth-child(1) {
+    width: 50%;  /* Item Name column takes more space */
+    text-align: left;
+    padding-left: 20px;
+}
+
+.bill-table th:nth-child(2), 
+.bill-table td:nth-child(2),
+.bill-table th:nth-child(3), 
+.bill-table td:nth-child(3),
+.bill-table th:nth-child(4), 
+.bill-table td:nth-child(4) {
+    width: 15%;
+    text-align: center;
+}
+
+/* Remove table borders */
+.bill-table td {
+    padding: 10px;
+    border: none;
+}
+/* Add space between table and Grand Total row */
+.grand-total-row {
+    margin-top: 20px; /* Adds space between table and Grand Total */
+    display: table-row; /* Ensure it stays within table format */
+}
+
+/* Or apply margin using padding inside the table */
+.bill-table tbody tr:last-child td {
+    padding: 15px; /* Adds spacing before Grand Total */
+}
+
+
+
+/* Grand Total Row - Special Formatting */
+.grand-total-row td {
+    font-size: 18px;
+    font-weight: bold;
+    background: transparent; /* Remove background */
+    color: #28a745;
+}
+
+/* Align 'Grand Total' under 'Qty' and 'Price' */
+.grand-total-row td:nth-child(2),
+.grand-total-row td:nth-child(3) {
+    text-align: center;
+    padding-right: 0px; /* Increase padding to create gap */
+}
+
+/* Align Grand Total Amount under 'Total Price' */
+.grand-total-row td:nth-child(4) {
+    text-align: center;
+    padding-left: 40px; /* Push total amount to the right */
+}
+
+/* Background color only for 'Grand Total' text */
+.grand-total-row td:nth-child(2),
+.grand-total-row td:nth-child(3) {
+    background: #e8f5e9; /* Light green background */
+    padding: 10px;
+}
+
+
+/* Buttons */
+.bill-buttons {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px; /* Adjust spacing */
+}
+
+/* Button Styling */
+.bill-buttons button {
+    padding: 10px 30px;
+    font-size: 16px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px; /* Rounded buttons */
+    transition: 0.3s;
+}
+
+/* Print Button */
+#printBill {
+    background: #007bff;
+    color: white;
+}
+
+#printBill:hover {
+    background: #0056b3;
+}
+
+/* Save Button */
+#saveBill {
+    background: #28a745;
+    color: white;
+}
+
+#saveBill:hover {
+    background: #1e7e34;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 150%;
+    height: 150%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-content {
+    margin: 3% 0 0 12%;
+    padding: 20px;
+    width: 50%;
+    border-radius: 10px;
+}
+.close-btn {
+    float: right;
+    font-size: 34px;
+    cursor: pointer;
+}
+.close-btn:hover {
+    color: red;
+}
+
+/* Add modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 600%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+
+.bill-container {
+    background-color: white;
+    margin: 1% 0 0 4%;
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+    position: relative;
+    border-radius: 5px;
+}
+
+.close-btn {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 28px;
+    cursor: pointer;
+}

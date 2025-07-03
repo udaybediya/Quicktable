@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainContainer"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:orientation="horizontal"
+    android:layout_marginTop="50dp"
+    android:layout_marginLeft="7dp">
+
+    <!-- AutoCompleteTextView -->
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="2dp"
+        android:background="@drawable/border"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:scrollHorizontally="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" />
+
+    <!-- Row Container for Buttons -->
+    <LinearLayout
+        android:id="@+id/rowContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:orientation="horizontal"
+        android:background="@drawable/border">
+
+        <!-- Decrease Button -->
+        <ImageButton
+            android:id="@+id/btnDecrease"
+            android:layout_width="45dp"
+            android:layout_height="50dp"
+            android:background="@drawable/border"
+            android:backgroundTint="#17518B"
+            android:contentDescription="Decrease Button"
+            android:src="@drawable/minicon" />
+
+        <!-- EditText displaying the number -->
+        <EditText
+            android:id="@+id/etNumber"
+            android:layout_width="45dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="1dp"
+            android:background="@null"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:inputType="number"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <!-- Increase Button -->
+        <ImageButton
+            android:id="@+id/btnIncrease"
+            android:layout_width="45dp"
+            android:layout_height="50dp"
+            android:background="@drawable/border"
+            android:backgroundTint="#17518B"
+            android:contentDescription="Increase Button"
+            android:src="@drawable/plusicon" />
+
+    </LinearLayout>
+</LinearLayout>

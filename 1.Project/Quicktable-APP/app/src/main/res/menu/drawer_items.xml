@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menuButton"
+        android:icon="@drawable/menu"
+        android:title="Menu"/>
+
+    <item
+        android:id="@+id/newTableButton"
+        android:icon="@drawable/newtable"
+        android:title="NewTable"/>
+
+    <item
+        android:id="@+id/updaterOderButton"
+        android:icon="@drawable/updatetable"
+        android:title="updateOrder"/>
+
+    <item
+        android:id="@+id/appearanceButton"
+        android:icon="@drawable/appearance"
+        android:title="Appearance"/>
+
+    <item
+        android:id="@+id/logoutButton"
+        android:icon="@drawable/logouticon"
+        android:title="Logout"/>
+
+</menu>

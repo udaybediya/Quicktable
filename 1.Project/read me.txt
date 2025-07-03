@@ -1,0 +1,12 @@
+
+in this project made by Uday Bediya [220801020], Keyur Anatala [220801010]
+
+If you want to run a project,
+
+There are three files: one was an admin file and the second was an app file. 
+
+Open the admin file in Chrome, where you enter Ub_18,123 the first time, and then the admin panel is open. Similar to the app, you can enter a similar username and password.
+
+Use the need to change the URL with your domain name and path according to you; otherwise, the app will not retrieve data properly. 
+
+Add a URL to the PHP API; it provides a connection from the app to the database.

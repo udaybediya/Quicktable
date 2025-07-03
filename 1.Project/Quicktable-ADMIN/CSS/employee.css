@@ -1,0 +1,357 @@
+.employee-card {
+    margin-top: 1.5%;
+    margin-left: 10%;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px 20px;
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+.employee-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.employee-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-grow: 1;
+}
+.sr-no {
+    font-weight: bold;
+    color: #11101D;
+}
+.employee-name {
+    color: #11101D;
+    font-size: 16px;
+    font-weight: bold;
+}
+.employee-type {
+    flex-grow: 1;
+    color: #666;
+}
+.actions {
+    display: flex;
+    align-items: center;
+}
+.icon-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #11101D;
+}
+.details {
+    max-height: 0;
+    overflow: hidden;
+    background-color: #f9f9f9;
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+    padding: 0 10px; /* Initially remove padding */
+    border-radius: 6px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    width: 100%;
+}
+
+/* When details are shown */
+.details.show {
+    max-height: 500px; /* Adjust this value based on content */
+    padding: 10px; /* Restore padding when expanded */
+}
+
+/* Styling for the info section */
+.details-info p strong {
+    color: #11101D; /* Dark color for titles like Email, Phone, Department */
+}
+
+/* Layout adjustments */
+.details-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.details-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: -10px;
+}
+
+.btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    color: white;
+    width: 100px;
+}
+.update-btn {
+    background-color: #4CAF50;
+}
+.delete-btn {
+    background-color: #D9534F;
+}
+
+.add-item-btn{
+    margin-top: 01%;
+    margin-left: 73.5%;
+    background-color: #053365;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.add-item-btn:hover {
+    background-color: #063970;
+}
+
+.add-item-btn:active {
+    background-color: #063970;
+}
+
+.edit-field {
+    width: 50%; /* Adjust width as needed */
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+/* Save & Cancel Buttons */
+.save-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.cancel-btn {
+    background-color: #D9534F;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Ensuring same button size */
+.save-btn, .cancel-btn {
+    width: 90px;
+    height: 35px;
+    margin-left: 10px;
+}
+
+.edit-mode {
+    display: none;
+}
+
+
+/* demo css */
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.form-popup {
+    padding: 20px;
+    border-radius: 10px;
+    width: 75%;
+    max-width: 600px;
+}
+
+.card {
+    width: 800px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Form Styling */
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group div {
+    width: 48%;
+}
+
+.form-control {
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+/* Button Styling */
+.btn-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 18px;
+    font-size: 14px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+    margin-left: 10px;
+}
+
+.btn-danger:hover {
+    background-color: #a71d2a;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.form-popup {
+    padding: 20px;
+    border-radius: 10px;
+    width: 75%;
+    max-width: 600px;
+}
+
+.card {
+    width: 800px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Form Styling */
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group div {
+    width: 48%;
+}
+
+.form-control {
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+/* Button Styling */
+.btn-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 18px;
+    font-size: 14px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+    margin-left: 10px;
+}
+
+.btn-danger:hover {
+    background-color: #a71d2a;
+}

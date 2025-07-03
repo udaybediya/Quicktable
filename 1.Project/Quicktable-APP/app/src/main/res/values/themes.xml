@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme -->
+    <style name="Base.Theme.Quicktable" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <!-- Custom NavigationView Style -->
+    <style name="NavigationViewStyle" parent="Widget.MaterialComponents.NavigationView">
+        <item name="android:background">@color/white</item> <!-- Drawer background color -->
+        <item name="itemBackground">@color/white</item>   <!-- Menu item background -->
+    </style>
+
+    <!-- Main App Theme -->
+    <style name="Theme.Quicktable" parent="Base.Theme.Quicktable">
+        <item name="navigationViewStyle">@style/NavigationViewStyle</item> <!-- Apply here -->
+        <item name="android:statusBarColor">@color/blue</item> <!-- Change to blue -->
+    </style>
+</resources>

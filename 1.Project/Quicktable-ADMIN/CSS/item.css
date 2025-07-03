@@ -1,0 +1,146 @@
+/* Table Styling */
+.item-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 8px; /* Creates space between rows (0.5 line) */
+}
+
+.item-table th, .item-table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+/* Rounded Header */
+.item-table thead tr {
+    background-color: #11101d;
+    color: white;
+}
+
+.item-table tbody tr {
+    background: white;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.item-table tbody tr:hover {
+    background: #ddd;
+}
+
+.edit-btn, .save-btn {
+    background-color: #FFC107; /* Yellow */
+    color: black;
+    padding: 6px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.edit-btn:hover, .save-btn:hover {
+    background-color: #e0a800; /* Darker Yellow */
+}
+
+.save-btn{
+    background-color: #28a745; /* Green */
+}
+
+.save-btn:hover {
+    background-color: #218838;
+}
+
+.edit-btn i, .save-btn i {
+    margin-right: 5px;
+}
+
+.item-table th:nth-child(5), 
+.item-table td:nth-child(5),
+.item-table th:nth-child(6), 
+.item-table td:nth-child(6) {
+    width: 80px; 
+    text-align: center;
+}
+
+
+/* Input Fields for Editing */
+.edit-input{
+    width: 100%;
+    padding: 6px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.edit-select{
+    width: 100%; /* Full width */
+    padding: 6px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: white;
+}
+.delete-btn {
+    background-color: #dc3545; /* Red */
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.delete-btn:hover {
+    background-color: #c82333; /* Darker Red */
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.add-item-btn {
+    background-color: #053365;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.add-item-btn:hover {
+    background-color: #063970;
+}
+
+.add-item-btn:active {
+    background-color: #063970;
+}
+
+
+
+.item-input, .item-dropdown {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.save-btn, .cancel-btn {
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.save-btn {
+    background-color: green;
+    color: white;
+}
+
+.cancel-btn {
+    background-color: red;
+    color: white;
+}
